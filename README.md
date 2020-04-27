@@ -1,0 +1,2 @@
+# LiveDataPermissions
+基于LiveData实现的动态权限申请库
