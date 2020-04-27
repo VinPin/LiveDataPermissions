@@ -1,0 +1,3 @@
+rootProject.name='LiveDataPermissions'
+include ':app'
+include ':livedatapermissions'
