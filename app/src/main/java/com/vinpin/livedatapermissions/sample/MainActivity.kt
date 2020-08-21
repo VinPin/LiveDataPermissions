@@ -4,7 +4,6 @@ import android.Manifest
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import androidx.lifecycle.Observer
 import com.vinpin.livedatapermissions.LiveDataPermissions
 import com.vinpin.livedatapermissions.PermissionDeny
 import com.vinpin.livedatapermissions.PermissionGrant
@@ -18,7 +17,7 @@ class MainActivity : AppCompatActivity() {
         LiveDataPermissions(this).request(
             Manifest.permission.WRITE_EXTERNAL_STORAGE,
             Manifest.permission.READ_PHONE_STATE
-        ).observe(this, Observer {
+        ).observe(this, {
             when (it) {
                 is PermissionGrant -> {
                     Toast.makeText(this, "同意", Toast.LENGTH_LONG).show()
