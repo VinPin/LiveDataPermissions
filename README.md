@@ -1,6 +1,11 @@
 # LiveDataPermissions
 基于LiveData实现的动态权限申请库
 
+## 添加依赖
+```java
+implementation 'com.vinpin:livedatapermissions:1.0.0'
+```
+
 ## 如何使用
 ```java
 LiveDataPermissions(this).request(
